@@ -1,0 +1,224 @@
+body{
+    background:linear-gradient(to right, rgb(142, 190, 229),rgb(11, 63, 175));
+    text-align: center;
+    font-family: 'Press Start 2P',cursive;
+    position: relative;
+}
+
+.name {
+    position:absolute;
+    right: 3%;
+    bottom:3%;
+    color: white;
+}
+
+a{
+    position:absolute;
+    right: 3%;
+    top:7.4%;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.header {
+    font-family: 'Press Start 2P',cursive;
+    font-size: 3em;
+    
+}
+
+#canvas {
+    /* border: 2px solid rgb(0, 0, 0); */
+    background-color: white;
+    box-shadow: 5px 5px 20px black;
+    border-radius: 10px;
+}
+
+.button-grp {
+    margin-top: 2em;
+    
+}
+
+button,.img_file{
+    padding: 20px 30px;
+    font-family: 'Press Start 2P',cursive;
+    box-shadow: 5px 9px 20px black;
+    border-radius: 5px;
+}
+
+#clear {
+    border: none;
+    background-color: tomato;
+    margin-right: 2em;
+    cursor: pointer;
+}
+
+#predict{
+    border: none;
+    background-color: rgb(42, 133, 236);
+    margin-left: 2em;
+    cursor: pointer;
+}
+
+#clear:focus{
+    outline: none;
+}
+
+#predict:focus{
+    outline: none;
+}
+
+#predict:hover{
+    background-color: rgb(21, 58, 219);
+    color:white;
+    
+}
+
+#clear:hover{
+    background-color: rgb(235, 33, 33);
+    color: white;
+}
+
+#img_file{
+    display:none;
+}
+
+
+.hidden {
+    display: none;
+    color:white;
+    
+    background-color: rgb(121, 38, 199);
+    padding: 10px;
+    margin-top: 2em;
+    font-family: 'Press Start 2P',cursive;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px black;
+    /* animation: popup 1.5 timing-function delay iteration-count direction fill-mode; */
+}
+
+.animate{
+    animation: popup 1s;
+    transition-timing-function: ease-in;
+}
+
+.animate_header1 {
+    animation: move_away 1s;
+}
+
+.animate_header2 {
+    animation: move_away1 1s;
+}
+
+
+@keyframes popup {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(none);
+    }
+    
+}
+
+@keyframes move_away {
+    0%{
+        transform: translateX(100px);
+    }
+
+    100% {
+        transform: translate(none);
+    }
+}
+
+@keyframes move_away1 {
+    0%{
+        transform: translateX(-100px);
+    }
+
+    100% {
+        transform: translate(none);
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .name {
+        position:relative;
+        right: 3px;
+        bottom:4px;
+        color: white;
+    }
+
+    .header {
+        font-family: 'Press Start 2P',cursive;
+        font-size: 30px;
+        
+    }
+
+    #canvas {
+        /* border: 2px solid rgb(0, 0, 0); */
+        background-color: white;
+        box-shadow: 5px 5px 20px black;
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .button-grp {
+        margin-top: 20px;
+        
+    }
+
+    #clear {
+        border: none;
+        background-color: tomato;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    
+    #predict{
+        border: none;
+        background-color: rgb(42, 133, 236);
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    a{
+        position:absolute;
+        right: 3px;
+        top:4px;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        padding: 2px;
+        border-radius: 10px;
+        font-size: 10px;
+    }
+
+    .hidden {
+        display: none;
+        color:white;
+        font-size: 10px;
+        background-color: rgb(121, 38, 199);
+        padding: 10px;
+        
+        margin: 20px auto;
+        font-family: 'Press Start 2P',cursive;
+        
+        border-radius: 10px;
+        box-shadow: 5px 5px 20px black;
+        /* animation: popup 1.5 timing-function delay iteration-count direction fill-mode; */
+    }
+
+    .animate{
+        animation: popup 1s;
+        transition-timing-function: ease-in;
+    }
+}

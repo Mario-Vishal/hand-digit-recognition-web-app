@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digit Recognizer</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    
+    <h1 class="header">Digit Recognizer</h1>
+    <p>Draw a digit in the below box</p>
+    <p class="name">By Mario</p>
+        <canvas id="canvas"></canvas>
+    
+    <div class="button-grp">
+        <button id="clear">clear</button>
+        <button id='predict'>Predict</button>
+    </div>
+
+    <div class="hidden" id="result">
+        <h1>Iam <span id='acc'></span>% sure that it's a <span id="digit"></span></h1>
+    </div>
+
+    <a href="https://github.com/Mario-Vishal">Github</a>
+    
+
+
+    
+    
+    
+    
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="{{ url_for('static',filename='app.js')}}"></script>
+
+
+</body>
+</html>
