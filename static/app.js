@@ -86,7 +86,7 @@ button_predict.addEventListener('click',()=>{
 
     // console.log(img_url)
     $.ajax({
-        url:"https://git.heroku.com/hand-digit-recognition.git",
+        url:"https://0.0.0.0:5000",
         type:"POST",
         data:{imageBase64:img_url}
     
@@ -98,7 +98,7 @@ button_predict.addEventListener('click',()=>{
         document.getElementById('digit').innerHTML=response.dig
         hidden_div.classList.add('animate')
         
-        // console.log(response)
+        console.log(response)
     });
 
     ctx.fillRect(0,0,canvas.width,canvas.height);
