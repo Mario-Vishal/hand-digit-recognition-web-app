@@ -11,7 +11,6 @@ app = Flask(__name__)
 app.config['SECRET_KEY']='3der45tyuidbfqwe'
 
 @app.route("/",methods=['GET','POST'])
-@app.route("/index",methods=['GET'])
 def index():
     
     if request.method=="POST":
