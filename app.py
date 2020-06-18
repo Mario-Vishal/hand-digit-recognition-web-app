@@ -8,9 +8,10 @@ import tensorflow as tf
 
 
 app = Flask(__name__)
-
+app.config['SECRET_KEY']='3der45tyuidbfqwe'
 
 @app.route("/",methods=['GET','POST'])
+@app.route("/index",methods=['GET'])
 def index():
     
     if request.method=="POST":
@@ -29,7 +30,9 @@ def index():
         
         print("<----------------------------------->")
         return jsonify(data)
-    
+    else:
+
+        return render_template('index.html')
     return render_template('index.html')
 
     
