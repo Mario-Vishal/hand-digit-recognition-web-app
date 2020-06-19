@@ -41,3 +41,5 @@ python app.py
 ```
 
 It will run on your local host on the port 5000.
+
+Head over to the tf_model folder and open the jupyter notebook for the tensorflow implementation.
