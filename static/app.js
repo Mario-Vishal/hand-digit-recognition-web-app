@@ -86,7 +86,7 @@ button_predict.addEventListener('click',()=>{
 
     // console.log(img_url)
     $.ajax({
-        url:"https://hand-digit-recognition.herokuapp.com/",
+        url:"/",
         type:"POST",
         data:{imageBase64:img_url}
     
