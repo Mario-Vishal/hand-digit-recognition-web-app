@@ -61,4 +61,4 @@ def make_prediction(img):
 
 if __name__ == "__main__":
     
-    app.run(debug=true)
+    app.run(debug=True)
