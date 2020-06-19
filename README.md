@@ -6,6 +6,10 @@
 
 ![app](https://user-images.githubusercontent.com/51908878/85110351-691e7700-b230-11ea-825e-4ef90be71267.gif)
 
+## Link - 
+
+https://hand-digit-recognition.herokuapp.com/
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. Fork it and proceed with the below steps.
